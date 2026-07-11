@@ -20,15 +20,20 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
     
-    <!-- 상단 네비게이션 바 -->
+<!-- 상단 네비게이션 바 -->
     <nav class="fixed w-full glass-nav shadow-sm z-50 border-b border-gray-100 transition-all">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-5xl">
             <a href="#" class="text-xl font-extrabold text-indigo-900 tracking-tight">한국문화경제학회</a>
-            <div class="space-x-6 hidden md:block">
+            <!-- 메뉴바 항목들 (flex 정렬 적용) -->
+            <div class="hidden md:flex items-center space-x-6">
                 <a href="#about" class="text-slate-600 hover:text-indigo-600 font-medium transition">모시는 글</a>
                 <a href="#timeline" class="text-slate-600 hover:text-indigo-600 font-medium transition">주요 일정</a>
                 <a href="#schedule" class="text-slate-600 hover:text-indigo-600 font-medium transition">프로그램</a>
                 <a href="#register" class="text-slate-600 hover:text-indigo-600 font-medium transition">사전등록</a>
+                <!-- [신규] 학회 홈페이지 버튼 -->
+                <a href="https://www.kace.kr/html/" target="_blank" class="bg-indigo-50 text-indigo-700 border border-indigo-100 px-4 py-1.5 rounded-full text-sm font-bold hover:bg-indigo-100 hover:border-indigo-200 transition">
+                    학회 홈페이지 ↗
+                </a>
             </div>
         </div>
     </nav>
@@ -188,8 +193,22 @@
             </div>
 
             <h3 class="text-2xl font-bold mb-2 text-slate-800 mt-6">온라인 접수 창구</h3>
-            <p class="text-indigo-600 font-medium mb-10 bg-indigo-50 inline-block px-4 py-1 rounded-full text-sm">자료 누락 방지를 위해 이메일 접수는 받지 않습니다.</p>
+            <p class="text-indigo-600 font-medium mb-8 bg-indigo-50 inline-block px-4 py-1 rounded-full text-sm">자료 누락 방지를 위해 이메일 접수는 받지 않습니다.</p>
             
+            <!-- 회원가입 안내 배너 -->
+            <div class="bg-slate-800 rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-center justify-between gap-4 text-left shadow-md">
+                <div>
+                    <h4 class="font-bold text-lg text-white flex items-center gap-2">
+                        <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path></svg>
+                        아직 한국문화경제학회 회원이 아니신가요?
+                    </h4>
+                    <p class="text-sm text-slate-300 mt-1">사전등록 진행 전, 학회 공식 홈페이지에서 회원가입을 먼저 진행해 주시기 바랍니다.</p>
+                </div>
+                <a href="https://www.kace.kr/html/?pmode=agree" target="_blank" class="w-full md:w-auto text-center px-6 py-2.5 bg-white text-slate-800 font-bold rounded-xl hover:bg-slate-100 transition-all whitespace-nowrap shadow">
+                    회원가입 바로가기 ↗
+                </a>
+            </div>
+
             <!-- 3단계 구성 레이아웃 시작 -->
             <div class="space-y-6 text-left">
                 
